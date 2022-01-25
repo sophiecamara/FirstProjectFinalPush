@@ -15,7 +15,7 @@ button.addEventListener('click',()=>{
     .then((res)=>res.json())
     .then((data)=>{
        let foodPic = data.image;
-       imageDiv.innerHTML = `<img src=${foodPic}>`
+       imageDiv.innerHTML = `<div class="picFetch"><img src=${foodPic}></div>`
     })
     .catch((error)=>{
         console.log(error)
